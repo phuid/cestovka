@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Prostě dobrá cestovka...</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: grey;
+      font-family: 'Cabin', sans-serif;
+      background-color: hsl(37, 50%, 90%);
+    }
+
+    div {
+      border-radius: 1rem;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      grid-area: header;
+      height: 6rem;
+      background-image: url("beach.jpg");
+      background-position: center 70%;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+    }
+
+    header div {
+      margin: 0.5rem;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+      border: solid hsl(170, 100%, 50%, 0.7) 2px;
+      color: black;
+    }
+
+    header div:hover {
+      background-color: hsl(20, 100%, 100%, 0.3);
+      animation: filter-animation 1s infinite;
+    }
+
+    header .this {
+      animation: filter-animation 1s infinite;
+    }
+
+    @-webkit-keyframes filter-animation {
+      0% {
+        -webkit-filter: hue-rotate(0deg);
+      }
+
+      25% {
+        -webkit-filter: hue-rotate(90deg);
+      }
+
+      50% {
+        -webkit-filter: hue-rotate(180deg);
+      }
+
+      75% {
+        -webkit-filter: hue-rotate(270deg);
+      }
+
+      100% {
+        -webkit-filter: hue-rotate(0deg);
+      }
+    }
+
+    @keyframes filter-animation {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      25% {
+        filter: hue-rotate(90deg);
+      }
+
+      50% {
+        filter: hue-rotate(180deg);
+      }
+
+      75% {
+        filter: hue-rotate(270deg);
+      }
+
+      100% {
+        filter: hue-rotate(0deg);
+      }
+    }
+
+    #main {
+      grid-area: main;
+      padding-top: 0.2rem;
+      border-top: solid 0.2rem black;
+      border-radius: 0;
+    }
+
+    #main div {
+      border: 1px solid black;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: hsl(37, 50%, 85%);
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      animation: filter-animation 2s infinite;
+    }
+
+    #main div div {
+      border: none;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+    }
+
+    .info img {
+      padding-right: 3rem;
+    }
+
+    #name {
+      animation: filter-animation 10s infinite;
+      color: darkcyan;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="zaver.html">
+      <div>hlavní stránka </div>
+    </a>
+    <a href="galerie.html">
+      <div>galerie </div>
+    </a>
+    <a href="zajezdy.html">
+      <div>nabídka zájezdů </div>
+    </a>
+    <a href="kontakt.html">
+      <div class="this">kontakt </div>
+    </a>
+
+    <a style="display: inline-block; margin-left: auto; color: black; text-decoration: none; font-family: monospace;"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <h1 id="name"></h1>
+    </a>
+    <script src="index.js"></script>
+
+  </header>
+
+  <div id="main">
+    <div>
+      <h1>kontakt</h1>
+      <ul>
+        <li><b>mail:</b> xhrud@gyrec.cz</li>
+        <li><b>Telefon:</b> 00420 123 456 789</li>
+        <li><b>Pobočka Brno:</b> puuoyevigannogreveN 4a</li>
+        <li><b>Pobočka Praha:</b> nwoduoytelannogreveN 123b</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>

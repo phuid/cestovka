@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Prostě dobrá cestovka...</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: grey;
+      font-family: 'Cabin', sans-serif;
+      background-color: hsl(37, 50%, 90%);
+    }
+
+    div {
+      border-radius: 1rem;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      grid-area: header;
+      height: 6rem;
+      background-image: url("beach.jpg");
+      background-position: center 70%;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+    }
+
+    header div {
+      margin: 0.5rem;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+      border: solid hsl(170, 100%, 50%, 0.7) 2px;
+      color: black;
+    }
+
+    header div:hover {
+      background-color: hsl(20, 100%, 100%, 0.3);
+      animation: filter-animation 1s infinite;
+    }
+
+    header .this {
+      animation: filter-animation 1s infinite;
+    }
+
+    @-webkit-keyframes filter-animation {
+      0% {
+        -webkit-filter: hue-rotate(0deg);
+      }
+
+      25% {
+        -webkit-filter: hue-rotate(90deg);
+      }
+
+      50% {
+        -webkit-filter: hue-rotate(180deg);
+      }
+
+      75% {
+        -webkit-filter: hue-rotate(270deg);
+      }
+
+      100% {
+        -webkit-filter: hue-rotate(0deg);
+      }
+    }
+
+    @keyframes filter-animation {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      25% {
+        filter: hue-rotate(90deg);
+      }
+
+      50% {
+        filter: hue-rotate(180deg);
+      }
+
+      75% {
+        filter: hue-rotate(270deg);
+      }
+
+      100% {
+        filter: hue-rotate(0deg);
+      }
+    }
+
+    #main {
+      grid-area: main;
+      padding-top: 0.2rem;
+      border-top: solid 0.2rem black;
+      border-radius: 0;
+    }
+
+    #main div {
+      border: 1px solid black;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: hsl(37, 50%, 85%);
+    }
+
+    #main div div {
+      border: none;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+    }
+
+    .info img {
+      padding-right: 3rem;
+    }
+
+    #name {
+      animation: filter-animation 10s infinite;
+      color: darkcyan;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="zaver.html">
+      <div>hlavní stránka </div>
+    </a>
+    <a href="galerie.html">
+      <div>galerie </div>
+    </a>
+    <a href="zajezdy.html">
+      <div class="this">nabídka zájezdů </div>
+    </a>
+    <a href="kontakt.html">
+      <div>kontakt </div>
+    </a>
+
+    <a style="display: inline-block; margin-left: auto; color: black; text-decoration: none; font-family: monospace;"
+      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <h1 id="name"></h1>
+    </a>
+    <script src="index.js"></script>
+
+  </header>
+
+  <div id="main">
+    <div>
+      <div class="text">
+        <h2>Pensee Beach Resort (ex. Pensee Royal Garden)</h2>
+      </div>
+      <div class="info">
+        <img src="https://dcontent.inviacdn.net/shared/img/web-400x260/2021/2/5/d4/27489656.jpg">
+        Egypt - Marsa Alam <br> 9.6. - 15.6.2021 (7 dní) / All Inclusive /
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 640 512">
+          <path
+            d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.62 65.62 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31 18.31-28.48 20.3-49.09 13.07-63.65-7.21-14.57-24.74-25.27-58.25-27.45-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99-218.7-82.06a17.799 17.799 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1-103.21 52.38-72.35-36.47a17.804 17.804 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08l76.21 82.97z" />
+        </svg>Praha
+        <hr>
+        <br>
+        Jen 50 m od písečné pláže<br>
+        <hr>
+        Hodnocení
+        3,8/5<br>
+        <br>
+        od 7 590 Kč za os.<br>
+        <br>
+      </div>
+    </div>
+    <br>
+    <div>
+      <div class="text">
+        <h2>El Malikia Abu Dabbab Resort (ex. Sol Y Mar Abu Dabbab)</h2>
+      </div>
+      <div class="info">
+        <img src="https://dcontent.inviacdn.net/shared/img/web-400x260/2021/2/5/d4/27489624.jpg">
+        Egypt - Marsa Alam <br> 25.6. - 2.7.2021 (8 dní) / All Inclusive /
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 640 512">
+          <path
+            d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.62 65.62 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31 18.31-28.48 20.3-49.09 13.07-63.65-7.21-14.57-24.74-25.27-58.25-27.45-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99-218.7-82.06a17.799 17.799 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1-103.21 52.38-72.35-36.47a17.804 17.804 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08l76.21 82.97z" />
+        </svg>Praha
+        <hr>
+        Bohatý podmořský život<br>
+        Přímo na pláži s jemným pískem<br>
+        Rozmanitá a chutná strava<br>
+        Vhodné pro rodiny s dětmi<br>
+        <hr>
+        Hodnocení
+        4,1/5
+        <br>
+        od 14 190 Kč za os.<br>
+
+        <br>
+      </div>
+    </div>
+    <br>
+    <div>
+      <div class="text">
+        <h2>Sunrise Aqua Joy Resort </h2>
+      </div>
+      <div class="info">
+        <img src="https://dcontent.inviacdn.net/shared/img/web-400x260/2020/1/3/d0/23251663.jpg">
+        Egypt - Hurghada <br> 12.6. - 18.6.2021 (7 dní) / All Inclusive /
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 640 512">
+          <path
+            d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.62 65.62 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31 18.31-28.48 20.3-49.09 13.07-63.65-7.21-14.57-24.74-25.27-58.25-27.45-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99-218.7-82.06a17.799 17.799 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1-103.21 52.38-72.35-36.47a17.804 17.804 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08l76.21 82.97z" />
+        </svg>Praha
+        <hr>
+        <br>
+        Aquapark pro dospělé a děti od 8 let<br>
+        7 restaurací & 5 barů<br>
+        Wellness centrum <br>
+        <hr>
+        Hodnocení
+        4,1/5 <br>
+        <br>
+        od 11 290 Kč za os. <br>
+        <br>
+      </div>
+    </div>
+    <br>
+    <div>
+      <div class="text">
+        <h2>Royal Tulip Beach Resort</h2>
+      </div>
+      <div class="info">
+        <img src="https://dcontent.inviacdn.net/shared/img/web-400x260/2020/11/2/d0/26796776.jpg">
+        Egypt - Marsa Alam <br> 9.6. - 15.6.2021 (7 dní) / All Inclusive /
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 640 512">
+          <path
+            d="M624 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM80.55 341.27c6.28 6.84 15.1 10.72 24.33 10.71l130.54-.18a65.62 65.62 0 0 0 29.64-7.12l290.96-147.65c26.74-13.57 50.71-32.94 67.02-58.31 18.31-28.48 20.3-49.09 13.07-63.65-7.21-14.57-24.74-25.27-58.25-27.45-29.85-1.94-59.54 5.92-86.28 19.48l-98.51 49.99-218.7-82.06a17.799 17.799 0 0 0-18-1.11L90.62 67.29c-10.67 5.41-13.25 19.65-5.17 28.53l156.22 98.1-103.21 52.38-72.35-36.47a17.804 17.804 0 0 0-16.07.02L9.91 230.22c-10.44 5.3-13.19 19.12-5.57 28.08l76.21 82.97z" />
+        </svg>Praha
+        <hr>
+        Přímo na pláži s korálovým útesem<br>
+        V zimě vyhřívaný bazén<br>
+        Aquapark<br>
+        Chutná a pestrá strava <br>
+        <hr>
+        Hodnocení
+        4,3/5
+        <br>
+        od 9 690 Kč za os. <br>
+
+        <br>
+      </div>
+    </div>
+    <br>
+  </div>
+
+</body>
+
+</html>
