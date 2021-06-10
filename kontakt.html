@@ -103,7 +103,7 @@
       border-radius: 0;
     }
 
-    #main div {
+    #main div:not(#main div div) {
       border: 1px solid black;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -163,13 +163,39 @@
 
   <div id="main">
     <div>
-      <h1>kontakt</h1>
-      <ul>
-        <li><b>mail:</b> xhrud@gyrec.cz</li>
-        <li><b>Telefon:</b> 00420 123 456 789</li>
-        <li><b>Pobočka Brno:</b> puuoyevigannogreveN 4a</li>
-        <li><b>Pobočka Praha:</b> nwoduoytelannogreveN 123b</li>
-      </ul>
+      <div>
+        <h1>kontaktní formulář</h1>
+        <form>
+          <input type="checkbox" name="prednost" value="prednost">
+          <label for="prednost"> Přednostní vyřízení </label>
+
+          <fieldset>
+            <legend>Jaký máte typ problému?</legend>
+            <input type="radio" id="obj" name="duvod" value="obj">
+            <label for="obj">Problém s objednávkou</label>
+            <input type="radio" id="platba" name="duvod" value="platba">
+            <label for="platba">Problém s placením</label><br>
+            <input type="radio" id="other" name="duvod" value="other" checked="checked">
+            <label for="other">Jiný</label><br>
+          </fieldset>
+          <label for="email">Váš email: </label>
+          <input type="email" id="email" name="email" value="muj.email@domena.dns">
+          <br>
+          <textarea id="text" name="text" rows="4" cols="50">Zpráva</textarea>
+          <br>
+          <input type="submit" id="submit">
+
+        </form>
+      </div>
+      <div>
+        <h1>kontakt</h1>
+        <ul>
+          <li><b>mail:</b> xhrud@gyrec.cz</li>
+          <li><b>Telefon:</b> 00420 123 456 789</li>
+          <li><b>Pobočka Brno:</b> puuoyevigannogreveN 4a</li>
+          <li><b>Pobočka Praha:</b> nwoduoytelannogreveN 123b</li>
+        </ul>
+      </div>
     </div>
   </div>
 
